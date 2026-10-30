@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Nexus System Doctor
+GenericName=System Diagnostics
+Comment=Diagnose and repair hardware and software problems
+Exec=nexus-doctor --gui
+Icon=nexus-system-doctor
+Terminal=false
+StartupNotify=true
+Categories=System;Monitor;Utility;
+Keywords=diagnostics;repair;health;disk;memory;battery;keyboard;
+X-XFCE-Settings-Panel=false

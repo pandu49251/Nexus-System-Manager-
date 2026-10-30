@@ -1,0 +1,74 @@
+#!/usr/bin/env python3
+"""
+Nexus System Doctor - launcher.
+
+With no arguments it starts the graphical interface; with any of the CLI
+options (--scan, --repair, --json, ...) it runs headless.  --cli and --gui
+force a particular mode.
+
+Installed layout:  /opt/nexus-system-doctor/nexus-doctor   (this file)
+                   /opt/nexus-system-doctor/nexus_doctor/  (the package)
+Source layout:     ./nexus-doctor  next to ./nexus_doctor/
+"""
+
+from __future__ import annotations
+
+import os
+import sys
+
+HERE = os.path.dirname(os.path.realpath(__file__))
+
+
+def _locate_package() -> bool:
+    """Put the directory containing the nexus_doctor package on sys.path."""
+    candidates = [
+        os.path.join(HERE, "nexus_doctor"),
+        os.path.join(os.path.dirname(HERE), "nexus_doctor"),
+        "/opt/nexus-system-doctor/nexus_doctor",
+    ]
+    for cand in candidates:
+        if os.path.isdir(cand) and os.path.isfile(os.path.join(cand, "__init__.py")):
+            sys.path.insert(0, os.path.dirname(cand))
+            return True
+    return False
+
+
+if not _locate_package():
+    sys.stderr.write(
+        "nexus-doctor: cannot find the nexus_doctor package next to this "
+        "script (looked in %s, %s, /opt/nexus-system-doctor).\n"
+        % (HERE, os.path.dirname(HERE)))
+    raise SystemExit(127)
+
+
+def _want_gui(argv: list) -> bool:
+    if "--gui" in argv:
+        return True
+    if "--cli" in argv:
+        return False
+    if any(a.startswith("-") for a in argv[1:]):
+        return False                       # any option means CLI
+    return bool(os.environ.get("DISPLAY") or os.environ.get("WAYLAND_DISPLAY"))
+
+
+def main() -> int:
+    # --gui and --cli are launcher-level flags; the CLI parser never sees them.
+    argv = [a for a in sys.argv if a not in ("--gui", "--cli")]
+    if _want_gui(sys.argv):
+        try:
+            import tkinter  # noqa: F401
+        except ImportError:
+            sys.stderr.write(
+                "nexus-doctor: Tkinter is not installed, so the graphical "
+                "interface cannot start.\n"
+                "Install it with:  sudo apt install python3-tk\n"
+                "Or run the text interface:  nexus-doctor --cli --scan\n")
+            return 127
+        from nexus_doctor.ui.app import run
+        return run()
+    from nexus_doctor.ui.cli import main as cli_main
+    return cli_main(argv[1:])
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

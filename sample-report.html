@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nexus System Doctor report - LENOVO 81ST IdeaPad S145-14AST</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, "DejaVu Sans", sans-serif; margin: 0; padding: 0;
+         background: #f6f7f9; color: #1b1b1b; line-height: 1.5; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 24px; }
+  header { background: linear-gradient(135deg, #123a5e, #1d6fa5); color: #fff;
+            padding: 22px 24px; border-radius: 10px; }
+  header h1 { margin: 0 0 4px; font-size: 21px; letter-spacing: .2px; }
+  header .sub { opacity: .85; font-size: 13px; }
+  .cards { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0; }
+  .card { flex: 1 1 110px; background: #fff; border-radius: 8px; padding: 12px;
+           border-left: 5px solid #999; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+  .card .n { font-size: 24px; font-weight: 700; }
+  .card .l { font-size: 12px; text-transform: uppercase; letter-spacing: .5px; color: #555; }
+  table.meta { width: 100%; border-collapse: collapse; background: #fff;
+                border-radius: 8px; overflow: hidden; margin-bottom: 18px; }
+  table.meta td { padding: 7px 12px; border-bottom: 1px solid #ececec; font-size: 13px; }
+  table.meta td:first-child { width: 190px; color: #555; }
+  h2 { font-size: 17px; margin: 26px 0 10px; padding-bottom: 6px;
+        border-bottom: 2px solid #d9dee3; }
+  .finding { background: #fff; border-radius: 8px; margin-bottom: 12px;
+              box-shadow: 0 1px 3px rgba(0,0,0,.08); overflow: hidden; }
+  .finding .head { padding: 12px 14px; border-left: 6px solid #999; }
+  .finding h3 { margin: 0 0 4px; font-size: 15px; }
+  .badge { display: inline-block; font-size: 10px; font-weight: 700; color: #fff;
+            padding: 2px 7px; border-radius: 10px; vertical-align: 2px; letter-spacing: .4px; }
+  .body { padding: 0 14px 14px; font-size: 13.5px; }
+  .body p { margin: 8px 0; }
+  .lbl { font-weight: 700; color: #333; }
+  ul { margin: 6px 0 6px 18px; padding: 0; }
+  li { margin: 3px 0; }
+  details { margin-top: 8px; border: 1px solid #e6e6e6; border-radius: 6px; }
+  summary { cursor: pointer; padding: 7px 10px; font-size: 12.5px;
+             background: #fafbfc; font-weight: 600; }
+  .ev { padding: 8px 10px; border-top: 1px solid #eee; font-size: 12.5px; }
+  .ev .src { font-weight: 600; color: #1d6fa5; }
+  pre { background: #f4f6f8; border: 1px solid #e3e7ea; border-radius: 5px;
+         padding: 8px; margin: 6px 0 0; overflow-x: auto; font-size: 11.5px;
+         font-family: "DejaVu Sans Mono", monospace; white-space: pre-wrap; }
+  code { background: #f0f2f4; padding: 1px 4px; border-radius: 3px; font-size: 12px; }
+  footer { margin-top: 28px; padding-top: 12px; border-top: 1px solid #d9dee3;
+            font-size: 11.5px; color: #666; }
+  .note { background: #fff8e1; border-left: 4px solid #e0a800; padding: 10px 12px;
+           border-radius: 5px; font-size: 13px; margin: 12px 0; }
+</style></head><body><div class="wrap">
+
+<header>
+<h1>Nexus System Doctor - System Diagnostic Report</h1>
+<div class='sub'>Version 1.0.0 &middot; generated 2026-10-28 18:05:12</div>
+</header>
+<div class="cards">
+<div class="card" style="border-left-color: #b3261e"><div class="n" style="color: #b3261e">3</div><div class="l">critical</div></div>
+<div class="card" style="border-left-color: #c2541b"><div class="n" style="color: #c2541b">15</div><div class="l">high</div></div>
+<div class="card" style="border-left-color: #8a6d1f"><div class="n" style="color: #8a6d1f">18</div><div class="l">medium</div></div>
+<div class="card" style="border-left-color: #3b6ea5"><div class="n" style="color: #3b6ea5">15</div><div class="l">low</div></div>
+<div class="card" style="border-left-color: #5a5a5a"><div class="n" style="color: #5a5a5a">1</div><div class="l">info</div></div>
+<div class="card" style="border-left-color: #1f7a3f"><div class="n" style="color: #1f7a3f">2</div><div class="l">ok</div></div>
+</div>
+<table class='meta'>
+<tr><td>Machine</td><td>LENOVO 81ST IdeaPad S145-14AST</td></tr>
+<tr><td>Serial</td><td>PF1XXXXX</td></tr>
+<tr><td>BIOS</td><td>8SCN25WW</td></tr>
+<tr><td>Distribution</td><td>Linux Mint 21.3</td></tr>
+<tr><td>Desktop</td><td>Xfce</td></tr>
+<tr><td>Kernel</td><td>5.15.0-91-generic</td></tr>
+<tr><td>Processor</td><td>AMD A6-9225 RADEON R4, 5 COMPUTE CORES 2C+3G (2 cores)</td></tr>
+<tr><td>Memory</td><td>3753 MB</td></tr>
+<tr><td>System disk</td><td>sda</td></tr>
+<tr><td>Hostname</td><td>ideapad-s145</td></tr>
+<tr><td>Scan type</td><td>quick</td></tr>
+<tr><td>Scan duration</td><td>5.5 s</td></tr>
+<tr><td>Run as</td><td>user</td></tr>
+</table>
+<div class='note'><b>51 finding(s) need attention.</b> They are listed below, most severe first. Each one shows the exact command that produced the evidence, so you can verify it yourself.</div>
+<h2>CRITICAL (3)</h2>
+<div class="finding">
+<div class="head" style="border-left-color: #b3261e"><span class="badge" style="background: #b3261e">CRITICAL</span> <h3 style="display:inline">ST1000LM035-1RK172: 328 reallocated sectors reported by SMART</h3><div class="sub" style="font-size:12px;color:#666">Storage / HDD health &middot; confidence: direct &middot; storage.reallocated_sector_ct_sda</div></div>
+<div class="body">
+<p>SMART attribute 5 (Reallocated_Sector_Ct) has a raw value of 328. The drive has retired bad sectors by substituting spares. This count only ever increases.</p>
+<p><span class='lbl'>Likely root cause:</span> Physical degradation of the magnetic medium or the head/actuator assembly. These counters never decrease.</p>
+<p><span class='lbl'>What you notice:</span> Reads from affected sectors are slow (the drive retries) or fail outright; data in those sectors is at risk.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Back up important files immediately.</li>
+<li>Run a full surface test: sudo smartctl -t long /dev/sda (takes an hour or more on 1 TB).</li>
+<li>Plan to replace the drive if the number grows.</li>
+</ul>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">smartctl -A /dev/sda</div>
+<div>Reallocated_Sector_Ct: raw=328 normalised=082 threshold=010 when_failed=-</div>
+<pre>$ sudo smartctl -A /dev/sda</pre>
+<pre>5 Reallocated_Sector_Ct   0x0033   082   082   010    Pre-fail  Always       -       328</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #b3261e"><span class="badge" style="background: #b3261e">CRITICAL</span> <h3 style="display:inline">ST1000LM035-1RK172: 412 errors reported to the host reported by SMART</h3><div class="sub" style="font-size:12px;color:#666">Storage / HDD health &middot; confidence: direct &middot; storage.reported_uncorrect_sda</div></div>
+<div class="body">
+<p>SMART attribute 187 (Reported_Uncorrect) has a raw value of 412. Read or write commands that completed with an uncorrectable error.</p>
+<p><span class='lbl'>Likely root cause:</span> Physical degradation of the magnetic medium or the head/actuator assembly. These counters never decrease.</p>
+<p><span class='lbl'>What you notice:</span> Reads from affected sectors are slow (the drive retries) or fail outright; data in those sectors is at risk.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Back up important files immediately.</li>
+<li>Run a full surface test: sudo smartctl -t long /dev/sda (takes an hour or more on 1 TB).</li>
+<li>Plan to replace the drive if the number grows.</li>
+</ul>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">smartctl -A /dev/sda</div>
+<div>Reported_Uncorrect: raw=412 normalised=001 threshold=000 when_failed=-</div>
+<pre>$ sudo smartctl -A /dev/sda</pre>
+<pre>187 Reported_Uncorrect      0x0032   001   001   000    Old_age   Always       -       412</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #b3261e"><span class="badge" style="background: #b3261e">CRITICAL</span> <h3 style="display:inline">The kernel logged 7 disk I/O error(s) during this session</h3><div class="sub" style="font-size:12px;color:#666">Storage / HDD health &middot; confidence: direct &middot; storage.io_errors</div></div>
+<div class="body">
+<p>The operating system itself reported that it could not read from or write to the disk. This is not a performance problem - it means data transfers are failing.</p>
+<p><span class='lbl'>Likely root cause:</span> Failing sectors, a faulty SATA link, or (rarely) a filesystem bug. If the filesystem has been remounted read-only, the kernel is protecting the data on a device it no longer trusts.</p>
+<p><span class='lbl'>What you notice:</span> File corruption, failed saves, and sudden read-only filesystems.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Back up your files immediately.</li>
+<li>Check the filesystem from a live USB: sudo fsck -f /dev/&lt;root-partition&gt;</li>
+<li>Compare against the SMART report above to confirm physical failure.</li>
+</ul>
+<details><summary>Evidence (7 item(s))</summary>
+<div class="ev">
+<div class="src">kernel log</div>
+<div>[ 7452.118032] EXT4-fs error (device sda2): ext4_find_entry:1536: inode #2621441: comm Thunar: reading directory lblock 0</div>
+<pre>$ journalctl -k -b | grep -iE &#x27;i/o error|ata|ext4&#x27;</pre>
+<pre>[ 7452.118032] EXT4-fs error (device sda2): ext4_find_entry:1536: inode #2621441: comm Thunar: reading directory lblock 0</pre>
+</div>
+<div class="ev">
+<div class="src">kernel log</div>
+<div>[ 7452.118417] buffer I/O error on dev sda2, logical block 10485760, lost sync page write</div>
+<pre>$ journalctl -k -b | grep -iE &#x27;i/o error|ata|ext4&#x27;</pre>
+<pre>[ 7452.118417] buffer I/O error on dev sda2, logical block 10485760, lost sync page write</pre>
+</div>
+<div class="ev">
+<div class="src">kernel log</div>
+<div>[ 7461.902144] ata1.00: exception Emask 0x0 SAct 0x10 SErr 0x0 action 0x0</div>
+<pre>$ journalctl -k -b | grep -iE &#x27;i/o error|ata|ext4&#x27;</pre>
+<pre>[ 7461.902144] ata1.00: exception Emask 0x0 SAct 0x10 SErr 0x0 action 0x0</pre>
+</div>
+<div class="ev">
+<div class="src">kernel log</div>
+<div>[ 7461.902156] ata1.00: failed command: READ FPDMA QUEUED</div>
+<pre>$ journalctl -k -b | grep -iE &#x27;i/o error|ata|ext4&#x27;</pre>
+<pre>[ 7461.902156] ata1.00: failed command: READ FPDMA QUEUED</pre>
+</div>
+<div class="ev">
+<div class="src">kernel log</div>
+<div>[ 7461.902170] ata1.00: status: { DRDY ERR }</div>
+<pre>$ journalctl -k -b | grep -iE &#x27;i/o error|ata|ext4&#x27;</pre>
+<pre>[ 7461.902170] ata1.00: status: { DRDY ERR }</pre>
+</div>
+<div class="ev">
+<div class="src">kernel log</div>
+<div>[ 7462.410233] ata1: hard resetting link</div>
+<pre>$ journalctl -k -b | grep -iE &#x27;i/o error|ata|ext4&#x27;</pre>
+<pre>[ 7462.410233] ata1: hard resetting link</pre>
+</div>
+<div class="ev">
+<div class="src">kernel log</div>
+<div>[ 7480.551002] blk_update_request: I/O error, dev sda, sector 331882432 op 0x0:(READ) flags 0x80700 phys_seg 1 prio class 0</div>
+<pre>$ journalctl -k -b | grep -iE &#x27;i/o error|ata|ext4&#x27;</pre>
+<pre>[ 7480.551002] blk_update_request: I/O error, dev sda, sector 331882432 op 0x0:(READ) flags 0x80700 phys_seg 1 prio class 0</pre>
+</div>
+</details>
+</div></div>
+<h2>HIGH (15)</h2>
+<div class="finding">
+<div class="head" style="border-left-color: #c2541b"><span class="badge" style="background: #c2541b">HIGH</span> <h3 style="display:inline">/ is nearly full: only 63.3 GB free (6.9%)</h3><div class="sub" style="font-size:12px;color:#666">Filesystem &amp; disk space &middot; confidence: measured &middot; space.low_root</div></div>
+<div class="body">
+<p>The filesystem mounted at / has 63.3 GB of 916.4 GB free.</p>
+<p><span class='lbl'>Likely root cause:</span> Free space below 20%. On a mechanical disk this is self-reinforcing: the allocator has to search harder for free blocks and files become more fragmented, so every read takes longer.</p>
+<p><span class='lbl'>What you notice:</span> Slower writes and reads, applications failing to save, and on a mechanical disk a very noticeable overall slowdown.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Empty the trash (Xfce keeps deleted files in ~/.local/share/Trash).</li>
+<li>Remove old package archives and shrink the system journal (see the cleanup repairs below).</li>
+<li>Move large media files to an external drive.</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>cleanup.apt_cache</code>, <code>cleanup.journal</code>, <code>cleanup.thumbnails</code></p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">statvfs(/)</div>
+<div>size 916.4 GB, used 849.9 GB (92.7%), available 63.3 GB (6.9%), filesystem ext4</div>
+<pre>$ df -h /</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #c2541b"><span class="badge" style="background: #c2541b">HIGH</span> <h3 style="display:inline">/home is nearly full: only 63.3 GB free (6.9%)</h3><div class="sub" style="font-size:12px;color:#666">Filesystem &amp; disk space &middot; confidence: measured &middot; space.low_home</div></div>
+<div class="body">
+<p>The filesystem mounted at /home has 63.3 GB of 916.4 GB free.</p>
+<p><span class='lbl'>Likely root cause:</span> Free space below 20%. On a mechanical disk this is self-reinforcing: the allocator has to search harder for free blocks and files become more fragmented, so every read takes longer.</p>
+<p><span class='lbl'>What you notice:</span> Slower writes and reads, applications failing to save, and on a mechanical disk a very noticeable overall slowdown.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Empty the trash (Xfce keeps deleted files in ~/.local/share/Trash).</li>
+<li>Remove old package archives and shrink the system journal (see the cleanup repairs below).</li>
+<li>Move large media files to an external drive.</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>cleanup.apt_cache</code>, <code>cleanup.journal</code>, <code>cleanup.thumbnails</code></p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">statvfs(/home)</div>
+<div>size 916.4 GB, used 849.9 GB (92.7%), available 63.3 GB (6.9%), filesystem ext4</div>
+<pre>$ df -h /home</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #c2541b"><span class="badge" style="background: #c2541b">HIGH</span> <h3 style="display:inline">The PS/2 keyboard controller reported errors</h3><div class="sub" style="font-size:12px;color:#666">Keyboard &amp; input devices &middot; confidence: direct &middot; input.ps2_errors</div></div>
+<div class="body">
+<p>The kernel&#x27;s i8042/atkbd driver logged problems talking to the keyboard controller. On IdeaPad laptops this typically shows up as random repeated characters, missing keystrokes, or a keyboard that stops responding after suspend.</p>
+<p><span class='lbl'>Likely root cause:</span> The PS/2 controller is not being detected reliably by the ACPI tables, or the controller is left in a bad state after a suspend/resume cycle.</p>
+<p><span class='lbl'>What you notice:</span> Missed, repeated or stuck keystrokes.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Add the PS/2 workaround to the kernel command line: edit /etc/default/grub, set GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash i8042.reset i8042.nomux i8042.nopnp&quot;, run &#x27;sudo update-grub&#x27; and reboot.</li>
+<li>If the problem only appears after suspend, test the parameters first by pressing &#x27;e&#x27; at the GRUB menu and adding them to the linux line.</li>
+</ul>
+<details><summary>Evidence (3 item(s))</summary>
+<div class="ev">
+<div class="src">kernel log</div>
+<div>[ 9203.441209] i8042: PNP: No PS/2 controller found</div>
+<pre>$ dmesg | grep -i -E &#x27;i8042|atkbd&#x27;</pre>
+<pre>[ 9203.441209] i8042: PNP: No PS/2 controller found</pre>
+</div>
+<div class="ev">
+<div class="src">kernel log</div>
+<div>[ 9203.441233] atkbd serio0: Spurious ACK on isa0060/serio0. Some program might be trying to access hardware directly.</div>
+<pre>$ dmesg | grep -i -E &#x27;i8042|atkbd&#x27;</pre>
+<pre>[ 9203.441233] atkbd serio0: Spurious ACK on isa0060/serio0. Some program might be trying to access hardware directly.</pre>
+</div>
+<div class="ev">
+<div class="src">kernel log</div>
+<div>[ 9203.512884] atkbd serio0: Spurious ACK on isa0060/serio0. Some program might be trying to access hardware directly.</div>
+<pre>$ dmesg | grep -i -E &#x27;i8042|atkbd&#x27;</pre>
+<pre>[ 9203.512884] atkbd serio0: Spurious ACK on isa0060/serio0. Some program might be trying to access hardware directly.</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #c2541b"><span class="badge" style="background: #c2541b">HIGH</span> <h3 style="display:inline">No swap space is configured</h3><div class="sub" style="font-size:12px;color:#666">Memory &amp; swap &middot; confidence: measured &middot; memory.no_swap</div></div>
+<div class="body">
+<p>With 3753 MB of RAM and no swap at all, exhausting memory leaves the kernel no option but to invoke the out-of-memory killer, which terminates applications instantly.</p>
+<p><span class='lbl'>Likely root cause:</span> No swap device exists. Swap is not only for emergencies: it also lets the kernel evict rarely-used anonymous pages, which frees RAM for the page cache and makes the desktop more responsive.</p>
+<p><span class='lbl'>What you notice:</span> Applications disappear without warning under load; the desktop has no safety margin; hibernation is impossible.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Create a compressed zram swap device (fast, reversible, no repartitioning).</li>
+<li>Alternatively create a swapfile, but on a mechanical disk it will be slow.</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>memory.zram_swap</code></p>
+<details><summary>Evidence (3 item(s))</summary>
+<div class="ev">
+<div class="src">/proc/meminfo</div>
+<div>MemTotal 3753 MB, MemAvailable 674 MB (18.0% free)</div>
+<pre>$ cat /proc/meminfo</pre>
+<pre>MemTotal:       3843848 kB
+MemAvailable:   690216 kB</pre>
+</div>
+<div class="ev">
+<div class="src">/proc/swaps</div>
+<div>No swap device is configured at all.</div>
+<pre>$ cat /proc/swaps</pre>
+<pre>Filename				Type		Size	Used	Priority
+(no entries)</pre>
+</div>
+<div class="ev">
+<div class="src">kernel module check</div>
+<div>The running kernel provides the zram module, so compressed RAM swap can be created without installing anything or partitioning the disk.</div>
+<pre>$ modinfo zram</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #c2541b"><span class="badge" style="background: #c2541b">HIGH</span> <h3 style="display:inline">The kernel killed processes to free memory (2 event(s) in this boot)</h3><div class="sub" style="font-size:12px;color:#666">Memory &amp; swap &middot; confidence: direct &middot; memory.oom_kills</div></div>
+<div class="body">
+<p>The out-of-memory killer ran. Applications did not crash on their own - the kernel terminated them because the system ran out of RAM.</p>
+<p><span class='lbl'>Likely root cause:</span> Total memory demand exceeded RAM plus swap, so the kernel had to sacrifice a process.</p>
+<p><span class='lbl'>What you notice:</span> Windows and applications vanish with no error dialog.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Enable zram to increase effective memory capacity.</li>
+<li>Identify the largest consumer and reduce its footprint (browser tabs are the usual culprit).</li>
+<li>Consider installing earlyoom/nohang so memory pressure is handled before a hard OOM.</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>memory.zram_swap</code></p>
+<details><summary>Evidence (2 item(s))</summary>
+<div class="ev">
+<div class="src">kernel log</div>
+<div>[ 9101.224118] Out of memory: Killed process 2233 (firefox) total-vm:2841224kB, anon-rss:1003524kB, file-rss:0kB, shmem-rss:2048kB, UID:1000 pgtables:4328kB oom_score_adj:0</div>
+<pre>$ journalctl -k -b | grep -i -E &#x27;oom|killed process&#x27;</pre>
+<pre>[ 9101.224118] Out of memory: Killed process 2233 (firefox) total-vm:2841224kB, anon-rss:1003524kB, file-rss:0kB, shmem-rss:2048kB, UID:1000 pgtables:4328kB oom_score_adj:0</pre>
+</div>
+<div class="ev">
+<div class="src">kernel log</div>
+<div>[ 9101.310882] oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-2.scope,task=firefox,pid=2233,u</div>
+<pre>$ journalctl -k -b | grep -i -E &#x27;oom|killed process&#x27;</pre>
+<pre>[ 9101.310882] oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-2.scope,task=firefox,pid=2233,uid=1000</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #c2541b"><span class="badge" style="background: #c2541b">HIGH</span> <h3 style="display:inline">CPU is running at 1.00 GHz of 2.60 GHz while busy</h3><div class="sub" style="font-size:12px;color:#666">Processor &amp; load &middot; confidence: inferred &middot; cpu.throttling</div></div>
+<div class="body">
+<p>With work queued, the processor should be near its maximum frequency (2.60 GHz), but it is averaging 1.00 GHz (38%).</p>
+<p><span class='lbl'>Likely root cause:</span> The kernel or firmware is holding the clock down - usually because of temperature limits, a power profile, or a failing power management driver.</p>
+<p><span class='lbl'>What you notice:</span> The machine is artificially slow even when it is doing work.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Check temperatures above - heat is the most common cause.</li>
+<li>Check whether a power-saving mode is active (see the governor finding).</li>
+<li>Ensure the laptop is plugged in; some firmware caps frequency on battery.</li>
+</ul>
+<details><summary>Evidence (2 item(s))</summary>
+<div class="ev">
+<div class="src">/sys/devices/system/cpu/cpu*/cpufreq/scaling_cur_freq</div>
+<div>average 1.00 GHz, maximum 2.60 GHz (38%), governor powersave</div>
+<pre>$ cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_cur_freq</pre>
+</div>
+<div class="ev">
+<div class="src">/proc/loadavg</div>
+<div>load 3.41 on 2 threads</div>
+<pre>$ cat /proc/loadavg</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #c2541b"><span class="badge" style="background: #c2541b">HIGH</span> <h3 style="display:inline">The CPU is idle 28.6% of the time waiting for the disk</h3><div class="sub" style="font-size:12px;color:#666">Processor &amp; load &middot; confidence: measured &middot; cpu.iowait_high</div></div>
+<div class="body">
+<p>In a 1-second measurement, 28.6% of CPU time was spent blocked on I/O. The processor is not the bottleneck - the storage device is.</p>
+<p><span class='lbl'>Likely root cause:</span> Processes are waiting on a mechanical hard disk. A 5400 rpm drive services roughly 100 random requests per second, while an SSD does tens of thousands; everything queues behind the disk.</p>
+<p><span class='lbl'>What you notice:</span> The machine appears frozen while the disk light is on, even though the CPU is mostly idle.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Identify what is reading/writing (see the Services &amp; startup check - desktop search indexers are the most common cause).</li>
+<li>Reduce paging pressure: enable zram and lower vm.swappiness.</li>
+<li>An SSD eliminates this class of problem entirely.</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>memory.zram_swap</code>, <code>services.disable_indexers</code></p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">/proc/stat (1 s delta)</div>
+<div>iowait = 28.6% of CPU time</div>
+<pre>$ cat /proc/stat; sleep 1; cat /proc/stat</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #c2541b"><span class="badge" style="background: #c2541b">HIGH</span> <h3 style="display:inline">Desktop search indexer is running on a mechanical disk (tracker-miner-fs-3, tracker-extract-3)</h3><div class="sub" style="font-size:12px;color:#666">Services &amp; startup &middot; confidence: measured &middot; services.indexer_running</div></div>
+<div class="body">
+<p>A file indexer is actively walking the disk. On a 1 TB mechanical drive this generates a constant stream of small random reads that compete with everything else - it is the classic reason an otherwise healthy laptop feels permanently sluggish.</p>
+<p><span class='lbl'>Likely root cause:</span> tracker-miner-fs (Mint/Ubuntu) starts automatically per user and re-indexes on every change. Random I/O on a 5400 rpm disk is ~100 operations per second, so the queue never drains.</p>
+<p><span class='lbl'>What you notice:</span> High iowait, slow application launches, the disk LED flickering constantly, and fans spinning up while &#x27;nothing is running&#x27;.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Disable the indexer. Nothing on an Xfce desktop depends on it (Thunar&#x27;s search works without it), and it can be re-enabled at any time.</li>
+<li>If you want it, at least let it finish once: the first full index is the expensive part.</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>services.disable_indexers</code></p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">/proc/&lt;pid&gt;/cmdline</div>
+<div>tracker-miner-fs-3 (pid 1100, 187 MB) - Continuously scans the home directory and builds a search database.; tracker-extract-3 (pid 1104, 101 MB) - Extracts metadata (artist, duration, EXIF) from every file it finds.</div>
+<pre>$ ps aux | grep -E &#x27;tracker|baloo&#x27;</pre>
+<pre>1100: /usr/libexec/tracker-miner-fs-3
+1104: /usr/libexec/tracker-extract-3</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #c2541b"><span class="badge" style="background: #c2541b">HIGH</span> <h3 style="display:inline">1 package(s) are in an incomplete state</h3><div class="sub" style="font-size:12px;color:#666">Software &amp; system errors &middot; confidence: direct &middot; software.dpkg_broken</div></div>
+<div class="body">
+<p>Packages that are half-installed or half-configured block other packages from installing or upgrading, and the applications they provide may not start.</p>
+<p><span class='lbl'>Likely root cause:</span> An installation or upgrade was interrupted (power loss, closed lid, or a full disk).</p>
+<p><span class='lbl'>What you notice:</span> Updates fail; some applications are broken.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Run: sudo dpkg --configure -a   (safe, offline, fixes most cases)</li>
+<li>Then: sudo apt-get install -f   (may need an internet connection)</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>software.fix_dpkg</code></p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">/var/lib/dpkg/status</div>
+<div>linux-firmware [iF]</div>
+<pre>$ dpkg --audit</pre>
+<pre>The following packages are only half configured:
+ linux-firmware</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #c2541b"><span class="badge" style="background: #c2541b">HIGH</span> <h3 style="display:inline">16 error-level message(s) recorded since boot</h3><div class="sub" style="font-size:12px;color:#666">Software &amp; system errors &middot; confidence: direct &middot; software.journal_errors</div></div>
+<div class="body">
+<p>Grouped by category: Disk or filesystem errors: 5, Out-of-memory events: 2, Graphics driver or firmware errors: 2, USB device errors: 1, Service start failures: 6.</p>
+<p><span class='lbl'>Likely root cause:</span> The system log records what actually went wrong. Repeated messages of one kind point at a specific failing component.</p>
+<p><span class='lbl'>What you notice:</span> Depends on the category; storage and memory errors are the serious ones.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Look at the busiest category first; the checks for that component in this report give the specific diagnosis.</li>
+<li>See the full list with: journalctl -p 3 -xb</li>
+</ul>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">journalctl -p 3 -b</div>
+<div>Disk or filesystem errors: 5, Out-of-memory events: 2, Graphics driver or firmware errors: 2, USB device errors: 1, Service start failures: 6</div>
+<pre>$ journalctl -p 3 -b --no-pager -o cat -n 500</pre>
+<pre>Oct 28 13:11:40 ideapad-s145 systemd[1]: Failed to start PackageKit Daemon.
+Oct 28 13:11:40 ideapad-s145 systemd[1]: packagekit.service: Failed with result &#x27;exit-code&#x27;.
+Oct 28 13:02:11 ideapad-s145 kernel: ata1.00: failed command: READ FPDMA QUEUED
+Oct 28 13:02:11 ideapad-s145 kernel: ata1.00: error: { UNC }
+Oct 28 13:04:02 ideapad-s145 kernel: Out of memory: Killed process 2233 (firefox)
+Oct 28 13:04:02 ideapad-s145 kernel: oom-kill:constraint=CONSTRAINT_NONE,task=firefox,pid=2233</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #c2541b"><span class="badge" style="background: #c2541b">HIGH</span> <h3 style="display:inline">Filesystem metadata contains errors</h3><div class="sub" style="font-size:12px;color:#666">Storage / HDD health &middot; confidence: direct &middot; storage.fs_errors</div></div>
+<div class="body">
+<p>tune2fs reports the filesystem is &#x27;clean with errors&#x27;.</p>
+<p><span class='lbl'>Likely root cause:</span> Previous corruption, possibly from the disk errors listed above.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Run: sudo fsck -f /dev/sda2  (from a live USB if it is the root filesystem)</li>
+</ul>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">tune2fs -l /dev/sda2</div>
+<div>Filesystem state: clean with errors</div>
+<pre>$ sudo tune2fs -l /dev/sda2</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #c2541b"><span class="badge" style="background: #c2541b">HIGH</span> <h3 style="display:inline">ST1000LM035-1RK172: 4 uncorrectable sectors reported by SMART</h3><div class="sub" style="font-size:12px;color:#666">Storage / HDD health &middot; confidence: direct &middot; storage.offline_uncorrectable_sda</div></div>
+<div class="body">
+<p>SMART attribute 198 (Offline_Uncorrectable) has a raw value of 4. Sectors that failed an offline scan and cannot be repaired.</p>
+<p><span class='lbl'>Likely root cause:</span> Physical degradation of the magnetic medium or the head/actuator assembly. These counters never decrease.</p>
+<p><span class='lbl'>What you notice:</span> Reads from affected sectors are slow (the drive retries) or fail outright; data in those sectors is at risk.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Back up important files immediately.</li>
+<li>Run a full surface test: sudo smartctl -t long /dev/sda (takes an hour or more on 1 TB).</li>
+<li>Plan to replace the drive if the number grows.</li>
+</ul>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">smartctl -A /dev/sda</div>
+<div>Offline_Uncorrectable: raw=4 normalised=098 threshold=000 when_failed=-</div>
+<pre>$ sudo smartctl -A /dev/sda</pre>
+<pre>198 Offline_Uncorrectable   0x0010   098   098   000    Old_age   Offline      -       4</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #c2541b"><span class="badge" style="background: #c2541b">HIGH</span> <h3 style="display:inline">ST1000LM035-1RK172: 7 timed-out commands reported by SMART</h3><div class="sub" style="font-size:12px;color:#666">Storage / HDD health &middot; confidence: direct &middot; storage.command_timeout_sda</div></div>
+<div class="body">
+<p>SMART attribute 188 (Command_Timeout) has a raw value of 7. Commands that the drive failed to complete in time, often a sign of mechanical trouble.</p>
+<p><span class='lbl'>Likely root cause:</span> Physical degradation of the magnetic medium or the head/actuator assembly. These counters never decrease.</p>
+<p><span class='lbl'>What you notice:</span> Reads from affected sectors are slow (the drive retries) or fail outright; data in those sectors is at risk.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Back up important files immediately.</li>
+<li>Run a full surface test: sudo smartctl -t long /dev/sda (takes an hour or more on 1 TB).</li>
+<li>Plan to replace the drive if the number grows.</li>
+</ul>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">smartctl -A /dev/sda</div>
+<div>Command_Timeout: raw=7 normalised=100 threshold=000 when_failed=-</div>
+<pre>$ sudo smartctl -A /dev/sda</pre>
+<pre>188 Command_Timeout         0x0032   100   098   000    Old_age   Always       -       7</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #c2541b"><span class="badge" style="background: #c2541b">HIGH</span> <h3 style="display:inline">ST1000LM035-1RK172: 8 sectors waiting to be reallocated reported by SMART</h3><div class="sub" style="font-size:12px;color:#666">Storage / HDD health &middot; confidence: direct &middot; storage.current_pending_sector_sda</div></div>
+<div class="body">
+<p>SMART attribute 197 (Current_Pending_Sector) has a raw value of 8. These sectors could not be read. If a write to them fails, the data is lost.</p>
+<p><span class='lbl'>Likely root cause:</span> Physical degradation of the magnetic medium or the head/actuator assembly. These counters never decrease.</p>
+<p><span class='lbl'>What you notice:</span> Reads from affected sectors are slow (the drive retries) or fail outright; data in those sectors is at risk.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Back up important files immediately.</li>
+<li>Run a full surface test: sudo smartctl -t long /dev/sda (takes an hour or more on 1 TB).</li>
+<li>Plan to replace the drive if the number grows.</li>
+</ul>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">smartctl -A /dev/sda</div>
+<div>Current_Pending_Sector: raw=8 normalised=098 threshold=000 when_failed=-</div>
+<pre>$ sudo smartctl -A /dev/sda</pre>
+<pre>197 Current_Pending_Sector  0x0012   098   098   000    Old_age   Always       -       8</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #c2541b"><span class="badge" style="background: #c2541b">HIGH</span> <h3 style="display:inline">x86_pkg_temp is running at 84 °C</h3><div class="sub" style="font-size:12px;color:#666">Temperature &amp; throttling &middot; confidence: measured &middot; cpu.thermal_hot</div></div>
+<div class="body">
+<p>The hottest sensor reads 84 °C. Modern AMD mobile processors begin protecting themselves around 95-100 °C by cutting clock speed.</p>
+<p><span class='lbl'>Likely root cause:</span> Heat is not being removed fast enough: dust blocking the fan and heatsink fins is the usual cause on a laptop of this age, followed by dried-out thermal paste.</p>
+<p><span class='lbl'>What you notice:</span> Thermal throttling: the machine gets slower the longer it is used.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Clean the fan and heatsink with compressed air (blow outwards through the exhaust vent).</li>
+<li>Use the laptop on a hard, flat surface so the intake vents are not blocked.</li>
+<li>If temperatures stay high after cleaning, the thermal paste needs replacing.</li>
+</ul>
+<details><summary>Evidence (3 item(s))</summary>
+<div class="ev">
+<div class="src">/sys/class/thermal/thermal_zone0/temp</div>
+<div>acpitz: 83.0 °C (trip point 95.0 °C)</div>
+<pre>$ cat /sys/class/thermal/thermal_zone0/temp</pre>
+</div>
+<div class="ev">
+<div class="src">/sys/class/thermal/thermal_zone1/temp</div>
+<div>x86_pkg_temp: 84.0 °C</div>
+<pre>$ cat /sys/class/thermal/thermal_zone1/temp</pre>
+</div>
+<div class="ev">
+<div class="src">sensors</div>
+<div>Tctl 83.0°C; Tdie 83.0°C; edge 78.0°C</div>
+<pre>$ sensors</pre>
+<pre>k10temp-pci-00c3
+Adapter: PCI adapter
+Tctl:         +83.0 C
+Tdie:         +83.0 C
+
+amdgpu-pci-0008
+Adapter: PCI adapter
+vddgfx:       +0.95 V
+fan1:        3200 RPM
+edge:         +78.0 C  (crit = +104.0 C, hyst = -273.1 C)
+
+BAT0-acpi-0
+Adapter: ACPI interface
+in0:          10.84 V</pre>
+</div>
+</details>
+</div></div>
+<h2>MEDIUM (18)</h2>
+<div class="finding">
+<div class="head" style="border-left-color: #8a6d1f"><span class="badge" style="background: #8a6d1f">MEDIUM</span> <h3 style="display:inline">Battery is noticeably worn: 47% of its original capacity is gone</h3><div class="sub" style="font-size:12px;color:#666">Battery &amp; power &middot; confidence: measured &middot; battery.wear_BAT0</div></div>
+<div class="body">
+<p>The battery now holds 20,100,000 energy (µWh) against a design capacity of 37,900,000 - about 53% of what it had when new.</p>
+<p><span class='lbl'>Likely root cause:</span> Lithium-ion cells lose capacity through charge cycles and age. As they wear, internal resistance rises.</p>
+<p><span class='lbl'>What you notice:</span> Short run-time, and on many laptops CPU throttling because the pack can no longer deliver peak current.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Replace the battery if you need portable use; run-time will keep falling.</li>
+<li>Until then, keep the laptop plugged in for heavy work.</li>
+<li>Avoid deep discharges - they accelerate wear.</li>
+</ul>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">/sys/class/power_supply/BAT0/uevent</div>
+<div>CAPACITY=38; CAPACITY_LEVEL=Normal; CYCLE_COUNT=612; ENERGY_FULL=20100000; ENERGY_FULL_DESIGN=37900000; MANUFACTURER=SMP; MODEL_NAME=L17M3PG1; STATUS=Discharging; TECHNOLOGY=Li-ion; VOLTAGE_MIN_DESIGN=11400000; VOLTAGE_NOW=10840000</div>
+<pre>$ cat /sys/class/power_supply/BAT0/uevent</pre>
+<pre>CAPACITY=38
+CAPACITY_LEVEL=Normal
+CYCLE_COUNT=612
+ENERGY_FULL=20100000
+ENERGY_FULL_DESIGN=37900000
+ENERGY_NOW=7640000
+MANUFACTURER=SMP
+MODEL_NAME=L17M3PG1
+NAME=BAT0
+POWER_NOW=12400000
+PRESENT=1
+SERIAL_NUMBER=1234
+STATUS=Discharging
+TECHNOLOGY=Li-ion
+TYPE=Battery
+VOLTAGE_MIN_DESIGN=11400000
+VOLTAGE_NOW=10840000</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #8a6d1f"><span class="badge" style="background: #8a6d1f">MEDIUM</span> <h3 style="display:inline">10 applications start automatically at login</h3><div class="sub" style="font-size:12px;color:#666">Boot performance &middot; confidence: measured &middot; services.many_autostart</div></div>
+<div class="body">
+<p>Every autostart application reads libraries and data from disk at login. On a mechanical disk they queue behind each other, so the desktop stays busy for a long time after it appears.</p>
+<p><span class='lbl'>Likely root cause:</span> Applications registered themselves in ~/.config/autostart or /etc/xdg/autostart.</p>
+<p><span class='lbl'>What you notice:</span> Slow login and a sluggish first minute or two of every session.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Disable the ones you do not need in Settings &gt; Session and Startup &gt; Application Autostart.</li>
+<li>Disabling only removes it from start-up - the program stays installed.</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>services.trim_autostart</code></p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">~/.config/autostart and /etc/xdg/autostart</div>
+<div>AT SPI D-Bus Bus, Bluetooth Manager, Light Locker, System Reports, Update Manager, Network, Print Queue Applet, PulseAudio Sound System, Update Notifier, Power Manager</div>
+<pre>$ ls ~/.config/autostart /etc/xdg/autostart</pre>
+<pre>enabled  /home/user/.config/autostart/at-spi-dbus-bus.desktop
+enabled  /home/user/.config/autostart/blueman.desktop
+enabled  /home/user/.config/autostart/light-locker.desktop
+enabled  /home/user/.config/autostart/mintreport.desktop
+enabled  /home/user/.config/autostart/mintupdate.desktop
+enabled  /home/user/.config/autostart/nm-applet.desktop
+enabled  /home/user/.config/autostart/print-applet.desktop
+enabled  /home/user/.config/autostart/pulseaudio.desktop
+enabled  /home/user/.config/autostart/update-notifier.desktop
+enabled  /home/user/.config/autostart/xfce4-power-manager.desktop</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #8a6d1f"><span class="badge" style="background: #8a6d1f">MEDIUM</span> <h3 style="display:inline">Boot takes 78 s (58 s of it starting services)</h3><div class="sub" style="font-size:12px;color:#666">Boot performance &middot; confidence: direct &middot; services.slow_boot</div></div>
+<div class="body">
+<p>systemd-analyze reports a 78 second start-up, of which 58 s is userspace service start-up.</p>
+<p><span class='lbl'>Likely root cause:</span> On a mechanical disk, services that start in parallel all seek at once and serialise behind each other.</p>
+<p><span class='lbl'>What you notice:</span> Long wait before the desktop is usable.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Review the slowest units listed above and disable the ones you do not need.</li>
+<li>An SSD reduces this dramatically; no software tuning matches it.</li>
+</ul>
+<details><summary>Evidence (2 item(s))</summary>
+<div class="ev">
+<div class="src">systemd-analyze</div>
+<div>firmware=6.2s; loader=4.1s; kernel=9.8s; userspace=58.3s; total=78.4s</div>
+<pre>$ systemd-analyze &amp;&amp; systemd-analyze blame | head</pre>
+<pre>42.331s apt-daily-upgrade.service
+31.204s man-db.service
+28.117s logrotate.service
+21.442s fwupd.service
+18.905s NetworkManager-wait-online.service
+14.331s udisks2.service
+11.204s e2scrub_all.service
+9.882s ModemManager.service
+7.441s accounts-daemon.service
+6.203s systemd-journal-flush.service</pre>
+</div>
+<div class="ev">
+<div class="src">systemd-analyze blame</div>
+<div>42.331s apt-daily-upgrade.service; 31.204s man-db.service; 28.117s logrotate.service; 21.442s fwupd.service; 18.905s NetworkManager-wait-online.service; 14.331s udisks2.service</div>
+<pre>$ systemd-analyze blame | head -12</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #8a6d1f"><span class="badge" style="background: #8a6d1f">MEDIUM</span> <h3 style="display:inline">System logs occupy 1.4 GB</h3><div class="sub" style="font-size:12px;color:#666">Filesystem &amp; disk space &middot; confidence: measured &middot; space.journal_large</div></div>
+<div class="body">
+<p>The systemd journal has grown to 1.4 GB (journalctl --disk-usage). Every disk write elsewhere gets slower on a nearly-full mechanical disk.</p>
+<p><span class='lbl'>Likely root cause:</span> Logs are retained without a size cap (default limits are generous).</p>
+<p><span class='lbl'>What you notice:</span> Wasted space and slower boot-time log rotation on a mechanical disk.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Limit the journal to ~200 MB and keep 14 days of history.</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>cleanup.journal</code></p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">journalctl --disk-usage</div>
+<div>journal size = 1.4 GB</div>
+<pre>$ journalctl --disk-usage</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #8a6d1f"><span class="badge" style="background: #8a6d1f">MEDIUM</span> <h3 style="display:inline">A key appears to be stuck down: Shift_L</h3><div class="sub" style="font-size:12px;color:#666">Keyboard &amp; input devices &middot; confidence: measured &middot; input.stuck_key</div></div>
+<div class="body">
+<p>The X server reports Shift_L as physically held down in two separate samples taken 2 seconds apart.</p>
+<p><span class='lbl'>Likely root cause:</span> A modifier key is logically stuck. This is common on IdeaPad PS/2 keyboards after a suspend/resume cycle, or when a keycap is physically obstructed.</p>
+<p><span class='lbl'>What you notice:</span> Typing produces capitals, shortcuts or menu actions instead of characters - it looks like the keyboard is broken.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Press and release each modifier (Shift, Ctrl, Alt, Super) once - this usually clears the stuck state.</li>
+<li>If it recurs, add &#x27;i8042.reset&#x27; to the kernel command line (see manual steps), which resets the PS/2 controller at boot.</li>
+<li>Check for a physically jammed keycap or debris.</li>
+</ul>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">xinput --query-state &lt;id&gt; (two samples, 2 s apart)</div>
+<div>keys down in both samples: Shift_L</div>
+<pre>$ xinput --query-state &lt;keyboard id&gt;</pre>
+<pre>device=Power Button keycode=50</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #8a6d1f"><span class="badge" style="background: #8a6d1f">MEDIUM</span> <h3 style="display:inline">Key repeat is set to the very slow X11 default (660 ms delay, 25/s)</h3><div class="sub" style="font-size:12px;color:#666">Keyboard &amp; input devices &middot; confidence: measured &middot; input.repeat_rate</div></div>
+<div class="body">
+<p>Held keys wait 660 ms before repeating and then repeat only 25 times per second. The X11 defaults date from the 1980s and feel unresponsive to most typists.</p>
+<p><span class='lbl'>Likely root cause:</span> The X server&#x27;s default key-repeat timing is inherited; Xfce does not change it unless told to.</p>
+<p><span class='lbl'>What you notice:</span> Typing feels laggy, backspacing through a word is slow, and the keyboard seems not to keep up.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Set a responsive rate: xset r rate 250 35 (250 ms before repeating, then 35 repeats per second), and persist it across logins.</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>input.keyrepeat</code></p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">xset q</div>
+<div>auto repeat delay: 660 ms, repeat rate: 25 per second</div>
+<pre>$ xset q</pre>
+<pre>auto repeat:  on    key click percent:  0    LED mask:  00000000
+  auto repeat delay:  660    repeat rate:  25
+  auto repeating keys:  00ffffffdffffbbf</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #8a6d1f"><span class="badge" style="background: #8a6d1f">MEDIUM</span> <h3 style="display:inline">Keyboard layout is &#x27;us&#x27;, but &#x27;in&#x27; is the layout for your region</h3><div class="sub" style="font-size:12px;color:#666">Keyboard &amp; input devices &middot; confidence: inferred &middot; input.layout_mismatch</div></div>
+<div class="body">
+<p>Your system locale implies the &#x27;in&#x27; layout, but the session is using &#x27;us&#x27;. Keys that produce punctuation and symbols (such as @ &quot; # £ ₹) are the ones that differ between layouts, which is why only some keys appear to be wrong.</p>
+<p><span class='lbl'>Likely root cause:</span> The layout chosen at installation does not match the region selected afterwards, or the session setting was changed later.</p>
+<p><span class='lbl'>What you notice:</span> Some keys type the wrong characters - often reported as &#x27;broken keys&#x27;.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Switch to the &#x27;in&#x27; layout, or deliberately keep &#x27;us&#x27; if that is what you want.</li>
+<li>Settings &gt; Keyboard &gt; Layout, or use the repair below.</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>input.layout</code></p>
+<details><summary>Evidence (3 item(s))</summary>
+<div class="ev">
+<div class="src">setxkbmap -query</div>
+<div>rules=evdev model=pc105 layout=us variant= options=terminate:ctrl_alt_bksp</div>
+<pre>$ setxkbmap -query</pre>
+<pre>rules: evdev
+model: pc105
+layout: us
+options: terminate:ctrl_alt_bksp</pre>
+</div>
+<div class="ev">
+<div class="src">/etc/default/keyboard</div>
+<div>XKBMODEL=pc105; XKBLAYOUT=in; XKBVARIANT=; XKBOPTIONS=; BACKSPACE=guess</div>
+<pre>$ cat /etc/default/keyboard</pre>
+</div>
+<div class="ev">
+<div class="src">/etc/default/locale or $LANG</div>
+<div>locale country: IN -&gt; expected layout &#x27;in&#x27;</div>
+<pre>$ echo $LANG</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #8a6d1f"><span class="badge" style="background: #8a6d1f">MEDIUM</span> <h3 style="display:inline">Applications have reserved nearly all available memory</h3><div class="sub" style="font-size:12px;color:#666">Memory &amp; swap &middot; confidence: measured &middot; memory.overcommit_high</div></div>
+<div class="body">
+<p>Committed_AS (3430 MB) is at or above CommitLimit (1876 MB): applications have asked for almost everything the kernel can promise.</p>
+<p><span class='lbl'>Likely root cause:</span> Memory reservations approach the commit limit (RAM + swap * overcommit ratio).</p>
+<p><span class='lbl'>What you notice:</span> Allocations may start failing and the OOM killer becomes likely.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Add swap or zram; close memory-heavy applications.</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>memory.zram_swap</code></p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">/proc/meminfo</div>
+<div>CommitLimit 1876 MB, Committed_AS 3430 MB (183.0% of limit)</div>
+<pre>$ grep -E &#x27;CommitLimit|Committed_AS&#x27; /proc/meminfo</pre>
+<pre>CommitLimit:   1921924 kB
+Committed_AS:  3512448 kB</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #8a6d1f"><span class="badge" style="background: #8a6d1f">MEDIUM</span> <h3 style="display:inline">Available memory is somewhat low (674 MB of 3753 MB, 18.0%)</h3><div class="sub" style="font-size:12px;color:#666">Memory &amp; swap &middot; confidence: measured &middot; memory.pressure</div></div>
+<div class="body">
+<p>Only 674 MB (18.0%) of RAM is available for new work. The kernel is close to having to reclaim memory.</p>
+<p><span class='lbl'>Likely root cause:</span> Working set of running applications approaches installed RAM. On this hardware, reclamation means paging to a mechanical disk.</p>
+<p><span class='lbl'>What you notice:</span> Window switches, app launches and file opens stall while memory is reclaimed.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Close unused applications and browser tabs (see the list of top consumers).</li>
+<li>Enable zram so reclaimed pages are compressed in RAM first.</li>
+<li>Check for a memory leak: a process whose RSS keeps growing across reboots.</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>memory.zram_swap</code></p>
+<details><summary>Evidence (2 item(s))</summary>
+<div class="ev">
+<div class="src">/proc/meminfo</div>
+<div>MemTotal 3753 MB, MemAvailable 674 MB (18.0% free)</div>
+<pre>$ cat /proc/meminfo</pre>
+<pre>MemTotal:       3843848 kB
+MemAvailable:   690216 kB</pre>
+</div>
+<div class="ev">
+<div class="src">/proc/&lt;pid&gt;/statm</div>
+<div>Largest memory consumers right now: firefox 656 MB, firefox 472 MB, tracker-miner-fs-3 187 MB, tracker-extract-3 101 MB, Xorg 72 MB</div>
+<pre>$ for p in /proc/[0-9]*; do cat $p/statm; done</pre>
+<pre>1500 656 MB /usr/lib/firefox/firefox -contentproc -isForBrowser
+1502 472 MB /usr/lib/firefox/firefox -contentproc -isForBrowser
+1100 187 MB /usr/libexec/tracker-miner-fs-3
+1104 101 MB /usr/libexec/tracker-extract-3
+812 72 MB /usr/lib/xorg/Xorg :0 -seat seat0 -auth /var/run/lightdm/root/:0</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #8a6d1f"><span class="badge" style="background: #8a6d1f">MEDIUM</span> <h3 style="display:inline">Only 3753 MB of physical RAM is installed</h3><div class="sub" style="font-size:12px;color:#666">Memory &amp; swap &middot; confidence: measured &middot; memory.small_ram</div></div>
+<div class="body">
+<p>This machine has 3753 MB of RAM. That is below the ~8 GB a modern Linux desktop wants, so the kernel will be forced to reclaim memory constantly.</p>
+<p><span class='lbl'>Likely root cause:</span> Installed RAM is small. Combined with a mechanical hard disk, reclaiming memory means paging to a device roughly 100x slower than RAM, which is what produces the multi-second freezes.</p>
+<p><span class='lbl'>What you notice:</span> Applications take seconds to respond after the disk LED stays lit.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Add compressed swap in RAM (zram) so pages are compressed instead of written to disk.</li>
+<li>Lower vm.swappiness so the kernel prefers dropping file caches over paging applications.</li>
+<li>If the RAM is upgradeable, 8 GB is the single biggest improvement available.</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>memory.zram_swap</code>, <code>memory.swappiness</code></p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">/proc/meminfo</div>
+<div>MemTotal 3753 MB, MemAvailable 674 MB (18.0% free)</div>
+<pre>$ cat /proc/meminfo</pre>
+<pre>MemTotal:       3843848 kB
+MemAvailable:   690216 kB</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #8a6d1f"><span class="badge" style="background: #8a6d1f">MEDIUM</span> <h3 style="display:inline">CPU frequency governor is &#x27;powersave&#x27;</h3><div class="sub" style="font-size:12px;color:#666">Processor &amp; load &middot; confidence: measured &middot; cpu.governor_low</div></div>
+<div class="body">
+<p>The scaling governor &#x27;powersave&#x27; keeps the processor at its lowest frequency. Everything runs slower than the hardware is capable of.</p>
+<p><span class='lbl'>Likely root cause:</span> Either a power-saving profile is active, or the cpufreq driver (acpi-cpufreq) did not pick a demand-based governor such as schedutil.</p>
+<p><span class='lbl'>What you notice:</span> Uniformly sluggish response, even for simple tasks.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Use the &#x27;schedutil&#x27; (or &#x27;ondemand&#x27;) governor so frequency rises with demand.</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>cpu.governor</code></p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor</div>
+<div>scaling_governor = powersave, driver = acpi-cpufreq</div>
+<pre>$ cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #8a6d1f"><span class="badge" style="background: #8a6d1f">MEDIUM</span> <h3 style="display:inline">System load is 3.41 on 2 core(s)</h3><div class="sub" style="font-size:12px;color:#666">Processor &amp; load &middot; confidence: measured &middot; cpu.load_high</div></div>
+<div class="body">
+<p>A load average of 3.41 means about 3.4 processes are competing for 2 core(s). Work is queueing up.</p>
+<p><span class='lbl'>Likely root cause:</span> Sustained demand exceeds what the CPU can retire. On a dual-core AMD processor there is very little headroom, so one busy task is enough to make everything else feel sluggish.</p>
+<p><span class='lbl'>What you notice:</span> Delayed response to clicks and keystrokes.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Close or restart the busiest application listed above.</li>
+<li>Check the startup applications found by the Services &amp; startup check.</li>
+</ul>
+<details><summary>Evidence (2 item(s))</summary>
+<div class="ev">
+<div class="src">/proc/loadavg</div>
+<div>1 min 3.41, 5 min 2.95 on 2 thread(s)</div>
+<pre>$ cat /proc/loadavg</pre>
+<pre>3.41 2.95 2.60 2/418 9123</pre>
+</div>
+<div class="ev">
+<div class="src">/proc/&lt;pid&gt;/stat (0.5 s sample)</div>
+<div>Busiest processes: none above 15% of a core</div>
+<pre>$ top -b -n1</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #8a6d1f"><span class="badge" style="background: #8a6d1f">MEDIUM</span> <h3 style="display:inline">3 systemd unit(s) failed to start</h3><div class="sub" style="font-size:12px;color:#666">Services &amp; startup &middot; confidence: direct &middot; services.failed_units</div></div>
+<div class="body">
+<p>Failed units often retry in a loop, consuming CPU and filling the log. They also mean a feature you expect is not working.</p>
+<p><span class='lbl'>Likely root cause:</span> A service&#x27;s dependencies or configuration are broken.</p>
+<p><span class='lbl'>What you notice:</span> Log noise, wasted resources, missing functionality.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Inspect one with: systemctl status &lt;unit&gt;</li>
+<li>If you do not need it, mask it: sudo systemctl mask &lt;unit&gt;</li>
+</ul>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">systemctl --failed</div>
+<div>packagekit.service; udisks2.service; update-notifier.service</div>
+<pre>$ systemctl --failed</pre>
+<pre>packagekit.service    loaded failed failed PackageKit Daemon
+udisks2.service       loaded failed failed Disk Manager
+update-notifier.service loaded failed failed Update Manager notifications</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #8a6d1f"><span class="badge" style="background: #8a6d1f">MEDIUM</span> <h3 style="display:inline">Automatic package timers (apt-daily.timer, apt-daily-upgrade.timer) refresh in the background</h3><div class="sub" style="font-size:12px;color:#666">Services &amp; startup &middot; confidence: measured &middot; services.apt_timers</div></div>
+<div class="body">
+<p>These timers refresh the package list and install updates at times you do not choose. On a mechanical disk the refresh produces a burst of random reads and writes that can make the whole machine feel frozen for several minutes - and it usually happens shortly after boot, or in the middle of work.</p>
+<p><span class='lbl'>Likely root cause:</span> systemd timers apt-daily.timer and apt-daily-upgrade.timer are enabled by default on Debian-based distributions, including Linux Mint, which already ships its own update manager.</p>
+<p><span class='lbl'>What you notice:</span> Sudden, unexplained slowdowns with heavy disk activity, often at the same time each day; slow boot on the first login after boot.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Leave updates to Linux Mint&#x27;s own Update Manager, which shows them and lets you install when convenient.</li>
+<li>If you prefer keeping the timers, schedule them for a time the laptop is on but idle rather than disabling them.</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>services.disable_apt_timers</code></p>
+<details><summary>Evidence (2 item(s))</summary>
+<div class="ev">
+<div class="src">systemctl list-unit-files --type=timer</div>
+<div>enabled: apt-daily.timer, apt-daily-upgrade.timer</div>
+<pre>$ systemctl list-unit-files --type=timer | grep apt</pre>
+<pre>apt-daily.timer
+apt-daily-upgrade.timer</pre>
+</div>
+<div class="ev">
+<div class="src">sysfs rotational</div>
+<div>sda is a mechanical disk, so background writes are felt immediately</div>
+<pre>$ cat /sys/block/&lt;disk&gt;/queue/rotational</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #8a6d1f"><span class="badge" style="background: #8a6d1f">MEDIUM</span> <h3 style="display:inline">Hard disk heads have parked 412,883 times</h3><div class="sub" style="font-size:12px;color:#666">Storage / HDD health &middot; confidence: direct &middot; storage.load_cycles_sda</div></div>
+<div class="body">
+<p>The head assembly has unloaded itself 412,883 times. Laptop firmware often parks the heads very aggressively to save power, which wears the mechanism.</p>
+<p><span class='lbl'>Likely root cause:</span> Aggressive head-parking (APM) firmware policy.</p>
+<p><span class='lbl'>What you notice:</span> Audible clicking, spin-up delays, and reduced drive lifespan.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Check the idle policy: sudo hdparm -B /dev/sda</li>
+<li>A value of 254 keeps heads off the ramp at the cost of some power.</li>
+</ul>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">smartctl -A /dev/sda</div>
+<div>Load_Cycle_Count raw = 412883</div>
+<pre>$ sudo smartctl -A /dev/sda</pre>
+<pre>193 Load_Cycle_Count        0x0032   001   001   000    Old_age   Always       -       412883</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #8a6d1f"><span class="badge" style="background: #8a6d1f">MEDIUM</span> <h3 style="display:inline">I/O scheduler is &#x27;none&#x27;, which is tuned for fast SSDs, not a hard disk</h3><div class="sub" style="font-size:12px;color:#666">Storage / HDD health &middot; confidence: direct &middot; config.scheduler</div></div>
+<div class="body">
+<p>The &#x27;none&#x27; scheduler performs no reordering to reduce head movement. On a rotating disk that means requests are serviced in the order they arrive, so the head seeks back and forth.</p>
+<p><span class='lbl'>Likely root cause:</span> Modern kernels default to &#x27;none&#x27; or &#x27;kyber&#x27;, which are correct for NVMe SSDs but a poor match for a mechanical drive.</p>
+<p><span class='lbl'>What you notice:</span> Slower simultaneous I/O and less responsive interactive tasks.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Use &#x27;bfq&#x27; for this disk. It applies immediately and is easily reverted.</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>storage.io_scheduler</code></p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">/sys/block/sda/queue/scheduler</div>
+<div>current: none; available: none, mq-deadline, kyber, bfq</div>
+<pre>$ cat /sys/block/sda/queue/scheduler</pre>
+<pre>[none] mq-deadline kyber bfq</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #8a6d1f"><span class="badge" style="background: #8a6d1f">MEDIUM</span> <h3 style="display:inline">ST1000LM035-1RK172 is a mechanical hard disk (1000.2 GB)</h3><div class="sub" style="font-size:12px;color:#666">Storage / HDD health &middot; confidence: measured &middot; storage.mechanical_sda</div></div>
+<div class="body">
+<p>The system disk spins at a fixed RPM and must physically move a head to read data. Random access takes roughly 10 ms versus under 0.1 ms on an SSD.</p>
+<p><span class='lbl'>Likely root cause:</span> Rotational storage: every application launch, every shared library and every icon is a separate seek. This is the dominant hardware reason this laptop feels slow, and it interacts with the 4 GB of RAM by making paging extremely expensive.</p>
+<p><span class='lbl'>What you notice:</span> Slow boot, slow application start-up, and long freezes whenever many small files are read at once (updates, indexing, browsing).</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Replacing this drive with an SSD is by far the largest possible improvement (roughly 5-10x faster application start-up).</li>
+<li>Until then: keep free space above 20%, avoid heavy desktop search indexing, and let the disk idle when it is busy.</li>
+</ul>
+<details><summary>Evidence (3 item(s))</summary>
+<div class="ev">
+<div class="src">/sys/block/sda/queue/rotational</div>
+<div>rotational = 1 (spinning disk)</div>
+<pre>$ cat /sys/block/sda/queue/rotational</pre>
+<pre>1</pre>
+</div>
+<div class="ev">
+<div class="src">/sys/block/sda/device/model</div>
+<div>model = ST1000LM035-1RK172</div>
+<pre>$ cat /sys/block/sda/device/model</pre>
+</div>
+<div class="ev">
+<div class="src">/sys/block/sda/size</div>
+<div>capacity = 1000.2 GB</div>
+<pre>$ cat /sys/block/sda/size</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #8a6d1f"><span class="badge" style="background: #8a6d1f">MEDIUM</span> <h3 style="display:inline">ST1000LM035-1RK172: 12 interface CRC errors (cable / connection)</h3><div class="sub" style="font-size:12px;color:#666">Storage / HDD health &middot; confidence: direct &middot; storage.crc_errors_sda</div></div>
+<div class="body">
+<p>Data was corrupted in transit between the disk and the controller. This is usually the SATA cable or its connector on the motherboard, not the disk surface.</p>
+<p><span class='lbl'>Likely root cause:</span> Signal integrity problem on the SATA link; inside a laptop this is typically a loose or worn connector.</p>
+<p><span class='lbl'>What you notice:</span> The link drops to a slower speed and retries, which makes the whole system stutter.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>If the count keeps rising, have the SATA connector reseated or the cable replaced.</li>
+<li>Back up data while the drive is still readable.</li>
+</ul>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">smartctl -A /dev/sda</div>
+<div>UDMA_CRC_Error_Count raw = 12</div>
+<pre>$ sudo smartctl -A /dev/sda</pre>
+<pre>199 UDMA_CRC_Error_Count    0x003e   200   200   000    Old_age   Always       -       12</pre>
+</div>
+</details>
+</div></div>
+<h2>LOW (15)</h2>
+<div class="finding">
+<div class="head" style="border-left-color: #3b6ea5"><span class="badge" style="background: #3b6ea5">LOW</span> <h3 style="display:inline">Battery has completed 612 charge cycles</h3><div class="sub" style="font-size:12px;color:#666">Battery &amp; power &middot; confidence: direct &middot; battery.cycles_BAT0</div></div>
+<div class="body">
+<p>612 full charge cycles. Most laptop cells are specified for roughly 300-500 cycles before noticeable degradation.</p>
+<p><span class='lbl'>Likely root cause:</span> Cumulative chemical ageing from charge/discharge cycles.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Expect reduced run-time; consider a replacement.</li>
+</ul>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">/sys/class/power_supply/BAT0/uevent</div>
+<div>CAPACITY=38; CAPACITY_LEVEL=Normal; CYCLE_COUNT=612; ENERGY_FULL=20100000; ENERGY_FULL_DESIGN=37900000; MANUFACTURER=SMP; MODEL_NAME=L17M3PG1; STATUS=Discharging; TECHNOLOGY=Li-ion; VOLTAGE_MIN_DESIGN=11400000; VOLTAGE_NOW=10840000</div>
+<pre>$ cat /sys/class/power_supply/BAT0/uevent</pre>
+<pre>CAPACITY=38
+CAPACITY_LEVEL=Normal
+CYCLE_COUNT=612
+ENERGY_FULL=20100000
+ENERGY_FULL_DESIGN=37900000
+ENERGY_NOW=7640000
+MANUFACTURER=SMP
+MODEL_NAME=L17M3PG1
+NAME=BAT0
+POWER_NOW=12400000
+PRESENT=1
+SERIAL_NUMBER=1234
+STATUS=Discharging
+TECHNOLOGY=Li-ion
+TYPE=Battery
+VOLTAGE_MIN_DESIGN=11400000
+VOLTAGE_NOW=10840000</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #3b6ea5"><span class="badge" style="background: #3b6ea5">LOW</span> <h3 style="display:inline">/ updates file access times on every read (&#x27;rw,relatime,errors=remount-ro&#x27;)</h3><div class="sub" style="font-size:12px;color:#666">Filesystem &amp; disk space &middot; confidence: direct &middot; config.atime_root</div></div>
+<div class="body">
+<p>Every time a file is read, the filesystem writes a timestamp back to disk. Reading a thousand small files therefore causes a thousand extra writes.</p>
+<p><span class='lbl'>Likely root cause:</span> The &#x27;relatime&#x27; default still writes on many reads; on a mechanical disk these extra writes compete with real work.</p>
+<p><span class='lbl'>What you notice:</span> Measurable extra disk traffic during any activity that reads many files (browsing, indexing, launching applications).</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Mount with &#x27;noatime&#x27;. Access times are rarely needed on a desktop (mail clients and some backup tools are the exception).</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>storage.noatime</code></p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">/proc/mounts</div>
+<div>/dev/sda2 on / (ext4) options: rw,relatime,errors=remount-ro</div>
+<pre>$ cat /proc/mounts</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #3b6ea5"><span class="badge" style="background: #3b6ea5">LOW</span> <h3 style="display:inline">/home updates file access times on every read (&#x27;rw,relatime&#x27;)</h3><div class="sub" style="font-size:12px;color:#666">Filesystem &amp; disk space &middot; confidence: direct &middot; config.atime_home</div></div>
+<div class="body">
+<p>Every time a file is read, the filesystem writes a timestamp back to disk. Reading a thousand small files therefore causes a thousand extra writes.</p>
+<p><span class='lbl'>Likely root cause:</span> The &#x27;relatime&#x27; default still writes on many reads; on a mechanical disk these extra writes compete with real work.</p>
+<p><span class='lbl'>What you notice:</span> Measurable extra disk traffic during any activity that reads many files (browsing, indexing, launching applications).</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Mount with &#x27;noatime&#x27;. Access times are rarely needed on a desktop (mail clients and some backup tools are the exception).</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>storage.noatime</code></p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">/proc/mounts</div>
+<div>/dev/sda3 on /home (ext4) options: rw,relatime</div>
+<pre>$ cat /proc/mounts</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #3b6ea5"><span class="badge" style="background: #3b6ea5">LOW</span> <h3 style="display:inline">Downloaded package files occupy 256.0 MB</h3><div class="sub" style="font-size:12px;color:#666">Filesystem &amp; disk space &middot; confidence: measured &middot; space.apt_cache_large</div></div>
+<div class="body">
+<p>256.0 MB of .deb files are cached in /var/cache/apt/archives. They are only needed to reinstall packages without re-downloading.</p>
+<p><span class='lbl'>Likely root cause:</span> apt-get clean/autoclean has not been run recently.</p>
+<p><span class='lbl'>What you notice:</span> Wasted disk space; no performance effect while unused.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Run &#x27;apt-get clean&#x27; - it is completely safe and reversible by re-downloading.</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>cleanup.apt_cache</code></p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">/var/cache/apt/archives</div>
+<div>256.0 MB in .deb archives</div>
+<pre>$ du -sh /var/cache/apt/archives</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #3b6ea5"><span class="badge" style="background: #3b6ea5">LOW</span> <h3 style="display:inline">Thumbnail cache has grown to 450.0 MB</h3><div class="sub" style="font-size:12px;color:#666">Filesystem &amp; disk space &middot; confidence: measured &middot; space.thumbnails_large</div></div>
+<div class="body">
+<p>450.0 MB of image thumbnails are stored in /home/user/.cache/thumbnails. On a mechanical disk a very large thumbnail directory makes the file manager slow to open image folders.</p>
+<p><span class='lbl'>Likely root cause:</span> Thumbnails are cached indefinitely by default.</p>
+<p><span class='lbl'>What you notice:</span> Slow folder browsing in Thunar; wasted space. They are regenerated on demand.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Clear the thumbnail cache; it is rebuilt automatically.</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>cleanup.thumbnails</code></p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">/home/user/.cache/thumbnails</div>
+<div>450.0 MB cached</div>
+<pre>$ du -sh /home/user/.cache/thumbnails</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #3b6ea5"><span class="badge" style="background: #3b6ea5">LOW</span> <h3 style="display:inline">Window compositing is enabled in Xfce</h3><div class="sub" style="font-size:12px;color:#666">Graphics &amp; drivers &middot; confidence: direct &middot; graphics.compositing_on</div></div>
+<div class="body">
+<p>Xfce is drawing every window through an off-screen buffer. On an integrated AMD GPU with a mechanical disk this adds latency to window movement and video playback.</p>
+<p><span class='lbl'>Likely root cause:</span> Compositing is enabled by default in Xfce for visual effects.</p>
+<p><span class='lbl'>What you notice:</span> Noticeable lag when dragging windows, resizing, or playing video.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Turning compositing off is instantly reversible and usually the single quickest way to make the desktop feel snappier.</li>
+<li>Settings &gt; Window Manager Tweaks &gt; Compositor, or use the repair below.</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>xfce.compositing_off</code></p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">xfconf-query -c xfwm4 -p /general/use_compositing</div>
+<div>use_compositing = true</div>
+<pre>$ xfconf-query -c xfwm4 -p /general/use_compositing</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #3b6ea5"><span class="badge" style="background: #3b6ea5">LOW</span> <h3 style="display:inline">The IdeaPad ACPI platform driver (ideapad_laptop) is not loaded</h3><div class="sub" style="font-size:12px;color:#666">Kernel, modules &amp; drivers &middot; confidence: direct &middot; kernel.ideapad_module_missing</div></div>
+<div class="body">
+<p>This is a Lenovo IdeaPad, but the platform driver that provides hotkeys, the Wi-Fi/Bluetooth rfkill switch and battery charge thresholds is not active.</p>
+<p><span class='lbl'>Likely root cause:</span> The module is not loaded on this kernel (sometimes blacklisted, sometimes unavailable).</p>
+<p><span class='lbl'>What you notice:</span> Function keys, airplane mode and battery-conservation mode may not work.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Try loading it: sudo modprobe ideapad_laptop</li>
+<li>If it works, it will be loaded automatically next boot.</li>
+</ul>
+<details><summary>Evidence (2 item(s))</summary>
+<div class="ev">
+<div class="src">/proc/modules</div>
+<div>ideapad_laptop: not present</div>
+<pre>$ lsmod | grep ideapad</pre>
+</div>
+<div class="ev">
+<div class="src">/sys/devices/virtual/dmi/id/product_name</div>
+<div>LENOVO 81ST</div>
+<pre>$ cat /sys/devices/virtual/dmi/id/product_name</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #3b6ea5"><span class="badge" style="background: #3b6ea5">LOW</span> <h3 style="display:inline">Nothing intervenes before the kernel&#x27;s out-of-memory killer strikes</h3><div class="sub" style="font-size:12px;color:#666">Memory &amp; swap &middot; confidence: measured &middot; config.no_oom_guard</div></div>
+<div class="body">
+<p>With 4 GB of RAM the built-in OOM killer reacts only at the last moment, and it picks whatever process it likes - often the desktop itself. A userspace daemon can sacrifice the biggest memory hog first, seconds earlier.</p>
+<p><span class='lbl'>Likely root cause:</span> earlyoom / nohang / systemd-oomd are not installed by default on Mint.</p>
+<p><span class='lbl'>What you notice:</span> The whole session can be killed instead of one runaway application.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Install one: sudo apt install earlyoom (starts automatically).</li>
+</ul>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">package and binary check</div>
+<div>earlyoom: not found; nohang: not found; systemd-oomd: not found</div>
+<pre>$ dpkg -l earlyoom nohang; ls /usr/lib/systemd/systemd-oomd</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #3b6ea5"><span class="badge" style="background: #3b6ea5">LOW</span> <h3 style="display:inline">Up to 750 MB of unsaved data can accumulate before writing (20% of RAM)</h3><div class="sub" style="font-size:12px;color:#666">Memory &amp; swap &middot; confidence: measured &middot; config.dirty_ratio</div></div>
+<div class="body">
+<p>vm.dirty_ratio=20% allows roughly 750 MB of modified data to pile up in RAM. When the limit is reached the kernel flushes everything at once, and because the disk manages only about 100 MB/s, the desktop stalls for seconds.</p>
+<p><span class='lbl'>Likely root cause:</span> The default dirty limits are proportional to RAM and were sized for servers with fast storage.</p>
+<p><span class='lbl'>What you notice:</span> Periodic multi-second freezes during file copies, downloads and updates.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Set smaller absolute limits (e.g. 32 MB background / 128 MB hard limit) so writes are flushed in small, frequent batches instead of one long stall.</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>storage.dirty_ratio</code></p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">/proc/sys/vm/dirty_ratio</div>
+<div>dirty_ratio=20, dirty_background_ratio=10, MemTotal=3753 MB -&gt; up to ~750 MB buffered</div>
+<pre>$ sysctl vm.dirty_ratio vm.dirty_background_ratio</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #3b6ea5"><span class="badge" style="background: #3b6ea5">LOW</span> <h3 style="display:inline">zswap (compressed swap cache) is disabled</h3><div class="sub" style="font-size:12px;color:#666">Memory &amp; swap &middot; confidence: measured &middot; memory.zswap_off</div></div>
+<div class="body">
+<p>zswap is compiled in but switched off, so pages are not compressed before being written out.</p>
+<p><span class='lbl'>Likely root cause:</span> Kernel parameter zswap.enabled is N by default on most distributions.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>zram swap provides the same benefit and is easier to enable; prefer it.</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>memory.zram_swap</code></p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">/sys/module/zswap/parameters/enabled</div>
+<div>zswap.enabled = N</div>
+<pre>$ cat /sys/module/zswap/parameters/enabled</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #3b6ea5"><span class="badge" style="background: #3b6ea5">LOW</span> <h3 style="display:inline">No laptop power-management tool is installed</h3><div class="sub" style="font-size:12px;color:#666">Power management &middot; confidence: measured &middot; battery.no_tlp</div></div>
+<div class="body">
+<p>TLP is not installed. It applies power-saving settings to the CPU, disk and wireless automatically, which usually extends battery life and reduces heat on AMD laptops.</p>
+<p><span class='lbl'>Likely root cause:</span> Optional package, not installed by default on Linux Mint.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Install with: sudo apt install tlp &amp;&amp; sudo tlp start</li>
+</ul>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">package database</div>
+<div>tlp: not installed</div>
+<pre>$ dpkg -l tlp</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #3b6ea5"><span class="badge" style="background: #3b6ea5">LOW</span> <h3 style="display:inline">Services are running for hardware this machine does not have (1)</h3><div class="sub" style="font-size:12px;color:#666">Services &amp; startup &middot; confidence: inferred &middot; services.unused_hw_services</div></div>
+<div class="body">
+<p>ModemManager (no mobile broadband hardware detected)</p>
+<p><span class='lbl'>Likely root cause:</span> Default services start regardless of whether their hardware exists.</p>
+<p><span class='lbl'>What you notice:</span> Small but constant memory and CPU/disk overhead.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>They can be disabled safely and re-enabled in one command if needed.</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>services.disable_unused</code></p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">/proc/&lt;pid&gt;/cmdline and /sys/class</div>
+<div>ModemManager (no mobile broadband hardware detected)</div>
+<pre>$ ps aux | grep -E &#x27;ModemManager|bluetoothd&#x27;</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #3b6ea5"><span class="badge" style="background: #3b6ea5">LOW</span> <h3 style="display:inline">A full filesystem check is due at the next boot</h3><div class="sub" style="font-size:12px;color:#666">Storage / HDD health &middot; confidence: direct &middot; storage.fsck_pending</div></div>
+<div class="body">
+<p>The root filesystem has been mounted 34 times, which reaches its check interval of 30. The next boot will run fsck.</p>
+<p><span class='lbl'>Likely root cause:</span> ext4 periodic check interval reached.</p>
+<p><span class='lbl'>What you notice:</span> One slow boot (a full fsck on 1 TB can take several minutes) - this is expected, not a fault.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Let it finish - interrupting a filesystem check is dangerous.</li>
+</ul>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">tune2fs -l /dev/sda2</div>
+<div>Mount count: 34, Maximum mount count: 30</div>
+<pre>$ sudo tune2fs -l /dev/sda2</pre>
+<pre>tune2fs 1.46.5 (30-Dec-2021)
+Filesystem volume name:   &lt;none&gt;
+Last mounted on:          /
+Filesystem UUID:          8f2a1b3c-1111-4a2b-9c3d-0e1f2a3b4c5d
+Filesystem magic number:  0xEF53
+Filesystem revision #:    1 (dynamic)
+Filesystem features:      has_journal ext_attr resize_inode dir_index filetype needs_recovery extent 64bit flex_bg sparse_super large_file huge_file dir_nlink extra_isize metadata_csum
+Filesystem flags:         signed_directory_hash
+Default mount options:    user_xattr acl
+Filesystem state:         clean with errors
+Errors behavior:          Continue
+Filesystem OS type:       Linux
+Inode count:              61054976
+Block count:              244190390
+Reserved block count:     12209519
+Free blocks:              17012647
+Free inodes:              41230984
+First block:</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #3b6ea5"><span class="badge" style="background: #3b6ea5">LOW</span> <h3 style="display:inline">Hard disk has been powered on for 21,456 hours</h3><div class="sub" style="font-size:12px;color:#666">Storage / HDD health &middot; confidence: direct &middot; storage.aged_sda</div></div>
+<div class="body">
+<p>21,456 hours is roughly 2 years of continuous use. Mechanical wear accumulates even when SMART passes.</p>
+<p><span class='lbl'>Likely root cause:</span> Age and accumulated mechanical wear.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Keep backups current; consider replacing with an SSD proactively.</li>
+</ul>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">smartctl -A /dev/sda</div>
+<div>Power_On_Hours raw = 21456</div>
+<pre>$ sudo smartctl -A /dev/sda</pre>
+<pre>9 Power_On_Hours          0x0032   075   075   000    Old_age   Always       -       21456</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #3b6ea5"><span class="badge" style="background: #3b6ea5">LOW</span> <h3 style="display:inline">No automatic disk-health monitoring is running</h3><div class="sub" style="font-size:12px;color:#666">Storage / HDD health &middot; confidence: direct &middot; storage.smartd_off</div></div>
+<div class="body">
+<p>The smartd daemon is not enabled, so nothing is watching the disk between scans and a slow failure could go unnoticed for months.</p>
+<p><span class='lbl'>Likely root cause:</span> smartd service is not enabled (smartmontools ships it disabled by default).</p>
+<p><span class='lbl'>What you notice:</span> Failure warnings arrive too late to back up comfortably.</p>
+<p><span class='lbl'>What to do:</span></p><ul>
+<li>Enable smartd so failures are reported as they happen.</li>
+</ul>
+<p><span class='lbl'>Automatic repair available:</span> <code>storage.enable_smartd</code></p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">systemctl is-enabled smartd</div>
+<div>result: disabled</div>
+<pre>$ systemctl is-enabled smartd</pre>
+</div>
+</details>
+</div></div>
+<h2>INFO (1)</h2>
+<div class="finding">
+<div class="head" style="border-left-color: #5a5a5a"><span class="badge" style="background: #5a5a5a">INFO</span> <h3 style="display:inline">Touchpad detected: Name=&quot;SynPS/2 Synaptics TouchPad</h3><div class="sub" style="font-size:12px;color:#666">Keyboard &amp; input devices &middot; confidence: direct &middot; input.touchpad_present</div></div>
+<div class="body">
+<p>The touchpad is present and handled by the libinput driver.</p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">/proc/bus/input/devices</div>
+<div>Name=&quot;SynPS/2 Synaptics TouchPad (handlers: Handlers=mouse0 event6)</div>
+<pre>$ cat /proc/bus/input/devices</pre>
+</div>
+</details>
+</div></div>
+<h2>OK (2)</h2>
+<div class="finding">
+<div class="head" style="border-left-color: #1f7a3f"><span class="badge" style="background: #1f7a3f">OK</span> <h3 style="display:inline">AMD GPU is using the modern &#x27;amdgpu&#x27; driver</h3><div class="sub" style="font-size:12px;color:#666">Graphics &amp; drivers &middot; confidence: direct &middot; graphics.amd_driver_ok</div></div>
+<div class="body">
+<p>Advanced Micro Devices, Inc. [AMD/ATI] Stoney [Radeon R2/R3/ is bound to the amdgpu driver, which is the correct modern driver for this hardware.</p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">lspci -k (00:01.0)</div>
+<div>VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Stoney [Radeon R2/R3/R4/R5 Graphics] [1002:98e4] (rev da)
+kernel driver in use: amdgpu
+available modules: amdgpu, radeon</div>
+<pre>$ lspci -k</pre>
+<pre>00:01.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Stoney [Radeon R2/R3/R4/R5 Graphics] [1002:98e4] (rev da)
+  Kernel driver in use: amdgpu
+  Kernel modules: amdgpu, radeon</pre>
+</div>
+</details>
+</div></div>
+<div class="finding">
+<div class="head" style="border-left-color: #1f7a3f"><span class="badge" style="background: #1f7a3f">OK</span> <h3 style="display:inline">SMART self-test passed for ST1000LM035-1RK172</h3><div class="sub" style="font-size:12px;color:#666">Storage / HDD health &middot; confidence: direct &middot; storage.smart_ok_sda</div></div>
+<div class="body">
+<p>The drive reports: PASSED.</p>
+<details><summary>Evidence (1 item(s))</summary>
+<div class="ev">
+<div class="src">smartctl -i /dev/sda</div>
+<div>Device Model: ST1000LM035-1RK172; Serial Number: WDE6QKJT; Firmware Version: SDM1; User Capacity: 1,000,204,886,016 bytes [1.00 TB]; Rotation Rate: 5400 rpm; SMART support is: Enabled</div>
+<pre>$ sudo smartctl -i /dev/sda</pre>
+<pre>smartctl 7.2 2020-12-30 r5155 [x86_64-linux-5.15.0-91-generic] (local build)
+Copyright (C) 2002-20, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Model Family:     Seagate Mobile HDD
+Device Model:     ST1000LM035-1RK172
+Serial Number:    WDE6QKJT
+LU WWN Device Id: 5 000c50 0b4e8f3a1
+Firmware Version: SDM1
+User Capacity:    1,000,204,886,016 bytes [1.00 TB]
+Sector Sizes:     512 bytes logical, 4096 bytes physical
+Rotation Rate:    5400 rpm
+Device is:        In smartctl database [for details use: -P show]
+ATA Version is:   ACS-3 T13/2161-D revision 5
+SATA Version is:  SATA 3.0, 6.0 Gb/s (current: 6.0 Gb/s)
+Local Time is:    Wed Oct 28 14:02:11 2026 IST
+SMART support is: Available - device has SMART capability.
+SMART support is: Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART overall-health self-assessment test result: PASSED
+Please note the following marginal Attributes:
+ID# ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN_FAILED RAW_VALUE
+190 Airflow_Temperature_Cel 0x0022   067   050   040    Old_age   Always       -       33 (Min/Max 22/41)
+
+General SMART Values:
+Offline data collection status:  (0x00)	Offline data collection activity
+					was never started.
+
+SMART Attributes Data Structure revision number: 10
+Vendor Specific SMART Attributes with Thresholds:
+ID# ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN_FAILED RAW_VALUE
+  1 Raw_Read_Error_Rate     0x000f   114</pre>
+</div>
+</details>
+</div></div>
+<h2>Repairs applied</h2>
+<table class='meta'><tr><td><b>Repair</b></td><td><b>Result</b></td><td><b>Before</b></td><td><b>After</b></td></tr>
+<tr><td>Clear downloaded package archives</td><td style='color:#1f7a3f'><b>verified</b></td><td>package cache = 256.0 MB</td><td>package cache = 4.0 MB (was 256.0 MB)</td></tr>
+<tr><td>Shrink system logs and cap their size</td><td style='color:#1f7a3f'><b>verified</b></td><td>journal = 1.4 GB</td><td>journal = 180.0 MB (was 1.4 GB)</td></tr>
+<tr><td>Clear the image thumbnail cache</td><td style='color:#1f7a3f'><b>verified</b></td><td>thumbnail cache = 450.0 MB</td><td>thumbnail cache = 0 B (was 450.0 MB)</td></tr>
+<tr><td>Switch the CPU to a demand-based frequency governor</td><td style='color:#1f7a3f'><b>verified</b></td><td>governor = powersave (target schedutil)</td><td>governor = schedutil (target schedutil)</td></tr>
+<tr><td>Set a responsive key repeat rate</td><td style='color:#1f7a3f'><b>verified</b></td><td>delay=660ms rate=25/s (autostart entry missing)</td><td>delay=250ms rate=35/s</td></tr>
+<tr><td>Set the keyboard layout for your region</td><td style='color:#1f7a3f'><b>verified</b></td><td>layout = us (target in)</td><td>layout = in (target in)</td></tr>
+<tr><td>Reduce swap eagerness (vm.swappiness = 10)</td><td style='color:#1f7a3f'><b>verified</b></td><td>vm.swappiness = 60</td><td>vm.swappiness = 10</td></tr>
+<tr><td>Create compressed swap in RAM (zram)</td><td style='color:#1f7a3f'><b>verified</b></td><td>no zram device (SwapTotal 0 MB)</td><td>/dev/zram0 1875 MB priority 100</td></tr>
+<tr><td>Stop automatic apt timers from stalling the disk</td><td style='color:#1f7a3f'><b>verified</b></td><td>apt-daily.timer: enabled, apt-daily-upgrade.timer: enabled</td><td>apt-daily.timer: disabled, apt-daily-upgrade.timer: disabled</td></tr>
+<tr><td>Disable the desktop search indexer</td><td style='color:#1f7a3f'><b>verified</b></td><td>active indexers: tracker-miner-fs-3.service, tracker-extract-3.service</td><td>active indexers: none</td></tr>
+<tr><td>Disable services for hardware this laptop does not have</td><td style='color:#1f7a3f'><b>verified</b></td><td>ModemManager.service: active; matching processes still alive: 2</td><td>ModemManager.service: inactive; matching processes still alive: 2</td></tr>
+<tr><td>Limit write buffering to prevent long freezes</td><td style='color:#1f7a3f'><b>verified</b></td><td>vm.dirty_bytes=0, vm.dirty_background_bytes=0</td><td>vm.dirty_bytes=134217728, vm.dirty_background_bytes=33554432</td></tr>
+<tr><td>Enable automatic disk-health monitoring (smartd)</td><td style='color:#1f7a3f'><b>verified</b></td><td>smartd: disabled</td><td>smartd: enabled</td></tr>
+<tr><td>Use a disk scheduler suited to a mechanical drive</td><td style='color:#1f7a3f'><b>verified</b></td><td>sda scheduler = none (target bfq)</td><td>sda scheduler = bfq (target bfq)</td></tr>
+<tr><td>Turn off window compositing in Xfce</td><td style='color:#1f7a3f'><b>verified</b></td><td>xfwm4 use_compositing = true</td><td>xfwm4 use_compositing = false</td></tr>
+<tr><td>Repair incomplete package installation</td><td style='color:#1f7a3f'><b>verified</b></td><td>packages needing attention: linux-firmware</td><td>packages needing attention: none</td></tr>
+<tr><td>Stop recording file access times (noatime)</td><td style='color:#1f7a3f'><b>verified</b></td><td>/: rw,relatime,errors=remount-ro; /home: rw,relatime</td><td>/: noatime; /home: noatime</td></tr>
+</table>
+<footer>Generated by Nexus System Doctor 1.0.0 on 2026-10-28 18:05:12. Diagnostic data was read from this machine; no data left the system.</footer>
+</div></body></html>
